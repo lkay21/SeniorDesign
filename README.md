@@ -1,2 +1,4 @@
 # SeniorDesign
-Mythrai Kapidi
+Ava Lyall
+Aryan Srivastava
+Logan Kay
