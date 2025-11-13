@@ -2,8 +2,8 @@ import os
 from urllib import response
 from flask import Flask
 from dotenv import load_dotenv
-# from db_instance import db
-# from auth_module.routes import auth_bp
+from db_instance import db
+from auth_module.routes import auth_bp
 from google import genai
 from google.genai.types import GenerateContentConfig, HttpOptions
 
@@ -50,6 +50,6 @@ def main():
     app.run(debug=True)
 
 if __name__ == "__main__":
-    prompt = input("Enter your fitness prompt: ")
-    make_llm_call(prompt)
-    # main()
+    # prompt = input("Enter your fitness prompt: ")
+    # make_llm_call(prompt)
+    main()
