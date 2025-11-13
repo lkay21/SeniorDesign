@@ -1,14 +1,11 @@
 import os
 from flask import Flask
-from auth.routes import auth_bp
-from flask_sqlalchemy import SQLAlchemy
+from .db_instance import db
+from .auth_module.routes import auth_bp
 
 
 # Get Infor From ENV
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-
-# Configure Database for login
-db = SQLAlchemy()
 
 # Configures Flask application (initializes with configuration settings,
 # sets up database, registers any blueprints)
